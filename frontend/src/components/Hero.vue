@@ -22,7 +22,8 @@
 
     <div class="md:w-1/2 flex justify-center relative z-10 animate-slide-in-right" style="animation-delay: 800ms;">
       <img
-        src="D:\laragon\www\MyPorto\frontend\src\assets\roblox.png"
+        src="import roblox from '@/assets/roblox.png';
+"
         alt="Foto Profil"
         class="w-80 h-80 rounded-full object-cover shadow-lg border-4 border-pink-300 hover:scale-105 transition duration-300"
       />
