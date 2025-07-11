@@ -1,7 +1,5 @@
 <template>
   <section id="profil" class="relative w-full px-6 py-20 flex flex-col md:flex-row items-center justify-center overflow-hidden text-gray-800">
-
-    <!-- Bubble background -->
     <div class="bubbles"></div>
 
     <div class="md:w-1/2 mb-10 md:mb-0 relative z-10">
@@ -22,14 +20,17 @@
 
     <div class="md:w-1/2 flex justify-center relative z-10 animate-slide-in-right" style="animation-delay: 800ms;">
       <img
-        src="import roblox from '@/assets/roblox.png';
-"
+        :src="roblox"
         alt="Foto Profil"
         class="w-80 h-80 rounded-full object-cover shadow-lg border-4 border-pink-300 hover:scale-105 transition duration-300"
       />
     </div>
   </section>
 </template>
+
+<script setup>
+import roblox from '../assets/roblox.png'
+</script>
 
 <style scoped>
 /* Background gradient pastel */
@@ -78,7 +79,6 @@
 }
 </style>
 
-<!-- Import font Poppins dari Google Fonts -->
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 </style>
