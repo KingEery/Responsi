@@ -5,7 +5,7 @@
         class="text-5xl font-bold text-gray-800 mb-4 animate-slidein-left"
         style="animation-delay: 200ms"
       >
-        Halo, Saya <span class="text-blue-600">Nama Anda</span>
+        Halo, Saya <span class="text-blue-600">Unzurna Zahira Wiyanda</span>
       </h1>
       <p class="text-xl text-gray-600 mb-8 animate-slide-in-left" style="animation-delay: 400ms">
         Mahasiswa Teknik Informatika yang bersemangat dalam pengembangan web dan desain antarmuka.
@@ -20,7 +20,7 @@
     </div>
     <div class="md:w-1/2 flex justify-center animate-slide-in-right">
       <img
-        src="https://via.placeholder.com/400"
+        src="D:\laragon\www\MyPorto\frontend\src\assets\roblox.png"
         alt="Foto Profil"
         class="w-80 h-80 rounded-full object-cover shadow-lg"
       />

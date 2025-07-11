@@ -14,13 +14,13 @@ import SectionTitle from './SectionTitle.vue'
       </a>
       <div class="flex justify-center space-x-6 mb-8">
         <a
-          href="#"
+          href="https://github.com/KingEery"
           target="_blank"
           class="text-gray-400 hover:textwhite transition-colors duration-300"
           >GitHub</a
         >
         <a
-          href="#"
+          href="https://www.linkedin.com/in/unzurna-zahira-wiyanda-713a28291/"
           target="_blank"
           class="text-gray-400 hover:textwhite transition-colors duration-300"
           >LinkedIn</a
