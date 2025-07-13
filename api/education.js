@@ -1,4 +1,5 @@
-import { educationHistory } from '../backend/data.js';
+// api/education.js
+import { educationHistory } from '../data.js';
 
 export default function handler(req, res) {
   res.status(200).json(educationHistory);
