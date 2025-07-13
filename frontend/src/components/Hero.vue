@@ -1,5 +1,9 @@
 <template>
-  <section id="profil" class="relative w-full px-6 py-20 flex flex-col md:flex-row items-center justify-center overflow-hidden text-gray-800">
+  <section
+    id="profil"
+    class="relative w-full px-6 py-20 flex flex-col md:flex-row items-center justify-center overflow-hidden text-gray-800"
+    :style="{ '--bubble-url': `url(${balon})` }"
+  >
     <div class="bubbles"></div>
 
     <div class="md:w-1/2 mb-10 md:mb-0 relative z-10">
@@ -30,36 +34,33 @@
 
 <script setup>
 import roblox from '../assets/roblox.png'
+import balon from '../assets/balon.png'
 </script>
 
 <style scoped>
-/* Background gradient pastel */
 #profil {
   background: linear-gradient(135deg, #fbc2eb 0%, #a6c1ee 100%);
   font-family: 'Poppins', sans-serif;
 }
 
-/* Bubble animasi layer */
 .bubbles {
   position: absolute;
   top: 0;
   left: 0;
   width: 200%;
   height: 200%;
-  background: url("https://ibb.co/sdbMVXxF") repeat;
+  background: var(--bubble-url) repeat;
   background-size: 150px;
   animation: moveBubbles 30s linear infinite;
   opacity: 0.3;
   z-index: 0;
 }
 
-/* Keyframes bubble naik */
 @keyframes moveBubbles {
   from { background-position: 0 0; }
   to { background-position: 0 -1000px; }
 }
 
-/* Slide-in animasi */
 @keyframes slideInLeft {
   from { opacity: 0; transform: translateX(-50px); }
   to { opacity: 1; transform: translateX(0); }
