@@ -6,7 +6,7 @@ import SectionTitle from './SectionTitle.vue';
 const skills = ref([]);
 onMounted(async () => {
   try {
-    const response = await axios.get('/api/skills');
+    const response = await axios.get('https://backend-eta-amber.vercel.app/api/skills');
     skills.value = response.data;
   } catch (error) {
     console.error(error);
