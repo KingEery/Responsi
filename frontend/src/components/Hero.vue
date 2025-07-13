@@ -46,7 +46,7 @@ import roblox from '../assets/roblox.png'
   left: 0;
   width: 200%;
   height: 200%;
-  background: url("https://i.ibb.co/N2YfDq2/bubble.png") repeat;
+  background: url("https://ibb.co/sdbMVXxF") repeat;
   background-size: 150px;
   animation: moveBubbles 30s linear infinite;
   opacity: 0.3;
