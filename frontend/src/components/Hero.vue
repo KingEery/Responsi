@@ -1,12 +1,12 @@
 <template>
   <section
     id="profil"
-    class="relative w-full px-6 py-20 flex flex-col md:flex-row items-center justify-center overflow-hidden text-gray-800"
+    class="relative w-full py-20 flex justify-center overflow-hidden text-gray-800 px-6"
     :style="{ '--bubble-url': `url(${balon})` }"
   >
     <div class="bubbles"></div>
 
-    <div class="bg-white/70 rounded-2xl px-10 py-10 max-w-7xl w-full relative z-10 backdrop-blur-sm shadow-md">
+    <div class="bg-white/70 rounded-2xl p-8 max-w-7xl w-full relative z-10">
       <div class="md:flex md:items-center md:justify-between space-y-10 md:space-y-0">
         <div class="md:w-1/2">
           <h1 class="text-5xl font-bold text-gray-800 mb-4 animate-slide-in-left flex items-center justify-center md:justify-start" style="animation-delay: 200ms;">
@@ -31,7 +31,7 @@
               alt="Foto Profil"
               class="w-80 h-80 rounded-full object-cover shadow-lg border-4 border-pink-300 hover:scale-105 transition duration-300"
             />
-            <!-- Badge tempel di lingkaran -->
+            <!-- Badge -->
             <span class="absolute -top-2 left-10 bg-pink-100 text-pink-600 text-xs font-semibold px-2 py-1 rounded-full shadow-sm">Frontend</span>
             <span class="absolute top-4 -right-4 bg-purple-100 text-purple-600 text-xs font-semibold px-2 py-1 rounded-full shadow-sm">UI/UX</span>
             <span class="absolute bottom-4 -left-4 bg-green-100 text-green-600 text-xs font-semibold px-2 py-1 rounded-full shadow-sm">Vue.js</span>
@@ -43,7 +43,6 @@
   </section>
 </template>
 
-
 <script setup>
 import roblox from '../assets/roblox.png'
 import balon from '../assets/balon.png'
@@ -51,7 +50,6 @@ import balon from '../assets/balon.png'
 
 <style scoped>
 #profil {
-  /* background lebih clean: putih pastel soft */
   background: #fdfdfd;
   font-family: 'Poppins', sans-serif;
 }
@@ -63,9 +61,9 @@ import balon from '../assets/balon.png'
   width: 200%;
   height: 200%;
   background: var(--bubble-url) repeat;
-  background-size: 250px;           /* bubble lebih besar, biar soft */
-  animation: moveBubbles 60s linear infinite;  /* gerak lebih lambat */
-  opacity: 0.08;                     /* bubble sangat soft, nyaris watermark */
+  background-size: 250px;
+  animation: moveBubbles 60s linear infinite;
+  opacity: 0.08;
   z-index: 0;
 }
 
