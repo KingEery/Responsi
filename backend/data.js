@@ -6,9 +6,14 @@ const educationHistory = [
      major: 'S1 - Teknik Informatika' 
     },
     { id: 2,
-     period: '2018 - 2021',
+     period: '2020 - 2023',
      institution: 'SMK Penerbangan AAG Adisutjipto',
      major: 'Aircraft Machining' 
+    },
+      { id: 3,
+     period: '2017 - 2020',
+     institution: 'SMP Negeri 1 Srumbung',
+     major: 'Hacker' 
     }
 ];
 const skills = [ 

@@ -6,31 +6,43 @@
   >
     <div class="bubbles"></div>
 
-    <div class="md:w-1/2 mb-10 md:mb-0 relative z-10">
-      <h1 class="text-5xl font-bold text-gray-800 mb-4 animate-slide-in-left flex items-center justify-center md:justify-start" style="animation-delay: 200ms;">
-        ✨ <span class="ml-2">Halo, Saya <span class="text-pink-500">Unzurna Zahira Wiyanda</span></span>
-      </h1>
-      <p class="text-xl text-gray-700 mb-8 animate-slide-in-left" style="animation-delay: 400ms;">
-        Mahasiswa Teknik Informatika yang suka bikin web lucu & desain pastel 🩷
-      </p>
-      <a
-        href="#kontak"
-        class="bg-pink-400 hover:bg-pink-500 text-white font-bold py-3 px-6 rounded-full transition transform duration-300 inline-block animate-slide-in-left hover:scale-105"
-        style="animation-delay: 600ms;"
-      >
-        Hubungi Saya
-      </a>
-    </div>
+    <div class="bg-white/70 rounded-2xl px-10 py-10 max-w-7xl w-full relative z-10 backdrop-blur-sm shadow-md">
+      <div class="md:flex md:items-center md:justify-between space-y-10 md:space-y-0">
+        <div class="md:w-1/2">
+          <h1 class="text-5xl font-bold text-gray-800 mb-4 animate-slide-in-left flex items-center justify-center md:justify-start" style="animation-delay: 200ms;">
+            ✨ <span class="ml-2">Halo, Saya <span class="text-pink-500">Unzurna Zahira Wiyanda</span></span>
+          </h1>
+          <p class="text-xl text-gray-700 mb-8 animate-slide-in-left" style="animation-delay: 400ms;">
+            Mahasiswa Teknik Informatika yang suka bikin web lucu & desain pastel 🩷
+          </p>
+          <a
+            href="#kontak"
+            class="bg-pink-400 hover:bg-pink-500 text-white font-bold py-3 px-6 rounded-full transition transform duration-300 inline-block animate-slide-in-left hover:scale-105"
+            style="animation-delay: 600ms;"
+          >
+            Hubungi Saya
+          </a>
+        </div>
 
-    <div class="md:w-1/2 flex justify-center relative z-10 animate-slide-in-right" style="animation-delay: 800ms;">
-      <img
-        :src="roblox"
-        alt="Foto Profil"
-        class="w-80 h-80 rounded-full object-cover shadow-lg border-4 border-pink-300 hover:scale-105 transition duration-300"
-      />
+        <div class="md:w-1/2 flex justify-center relative animate-slide-in-right" style="animation-delay: 800ms;">
+          <div class="relative">
+            <img
+              :src="roblox"
+              alt="Foto Profil"
+              class="w-80 h-80 rounded-full object-cover shadow-lg border-4 border-pink-300 hover:scale-105 transition duration-300"
+            />
+            <!-- Badge tempel di lingkaran -->
+            <span class="absolute -top-2 left-10 bg-pink-100 text-pink-600 text-xs font-semibold px-2 py-1 rounded-full shadow-sm">Frontend</span>
+            <span class="absolute top-4 -right-4 bg-purple-100 text-purple-600 text-xs font-semibold px-2 py-1 rounded-full shadow-sm">UI/UX</span>
+            <span class="absolute bottom-4 -left-4 bg-green-100 text-green-600 text-xs font-semibold px-2 py-1 rounded-full shadow-sm">Vue.js</span>
+            <span class="absolute -bottom-2 right-12 bg-yellow-100 text-yellow-600 text-xs font-semibold px-2 py-1 rounded-full shadow-sm">Design</span>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 </template>
+
 
 <script setup>
 import roblox from '../assets/roblox.png'
@@ -39,7 +51,8 @@ import balon from '../assets/balon.png'
 
 <style scoped>
 #profil {
-  background: linear-gradient(135deg, #fbc2eb 0%, #a6c1ee 100%);
+  /* background lebih clean: putih pastel soft */
+  background: #fdfdfd;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -50,9 +63,9 @@ import balon from '../assets/balon.png'
   width: 200%;
   height: 200%;
   background: var(--bubble-url) repeat;
-  background-size: 150px;
-  animation: moveBubbles 30s linear infinite;
-  opacity: 0.3;
+  background-size: 250px;           /* bubble lebih besar, biar soft */
+  animation: moveBubbles 60s linear infinite;  /* gerak lebih lambat */
+  opacity: 0.08;                     /* bubble sangat soft, nyaris watermark */
   z-index: 0;
 }
 
