@@ -1,4 +1,3 @@
-// backend/index.js
 import express from "express";
 import cors from "cors";
 import sql from "./db.js";
@@ -19,26 +18,6 @@ app.get("/api/education", async (req, res) => {
   }
 });
 
-app.get("/api/skills", async (req, res) => {
-  try {
-    const result = await sql`SELECT * FROM skills`;
-    res.json(result.rows);
-  } catch (error) {
-    console.error(error);
-    res.status(500).send("Error fetching skills");
-  }
-});
+// dst...
 
-app.get("/api/projects", async (req, res) => {
-  try {
-    const result = await sql`SELECT * FROM projects`;
-    res.json(result.rows);
-  } catch (error) {
-    console.error(error);
-    res.status(500).send("Error fetching projects");
-  }
-});
-
-app.listen(PORT, () => {
-  console.log(`✅ Backend running on http://localhost:${PORT}`);
-});
+export default app; // ini penting buat Vercel
