@@ -5,10 +5,14 @@ export const educationHistory = [
 ];
 
 export const skills = [ 
-  { name: 'Vue.js', level: 'Pemula' }, { name: 'JavaScript', level: 'Pemula' },
-  { name: 'Tailwind CSS', level: 'Pemula' }, { name: 'Node.js', level: 'Pemula' },
-  { name: 'Express.js', level: 'Pemula' }, { name: 'PostgreSQL', level: 'Pemula' },
-  { name: 'Git & GitHub', level: 'Pemula' }, { name: 'HTML5 & CSS3', level: 'Pemula' }
+  { name: 'Vue.js', level: 'Pemula' },
+  { name: 'JavaScript', level: 'Pemula' },
+  { name: 'Tailwind CSS', level: 'Pemula' },
+  { name: 'Node.js', level: 'Pemula' },
+  { name: 'Express.js', level: 'Pemula' },
+  { name: 'PostgreSQL', level: 'Pemula' },
+  { name: 'Git & GitHub', level: 'Pemula' },
+  { name: 'HTML5 & CSS3', level: 'Pemula' }
 ];
 
 export const projects = [ 

@@ -1,5 +1,5 @@
-import { projects } from '../backend/data.js'
+import { projects } from '../backend/data.js';
 
 export default function handler(req, res) {
-  res.status(200).json(projects)
+  res.status(200).json(projects);
 }
